@@ -1,23 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=Comfortaa:wght@400;700&display=swap');
 
 body {
-    background-color: rgb(246, 164, 242);
-    background-color: rgb(246, 119, 225);
-    background-color: rgb(244, 36, 199);
-    /* 118 i 246 */
+    margin: 0;
+    padding: 0;
+    background-color: rgba(204,228,68, 0.9);
     height: 100vh;
     font-family: 'Codystar', sans-serif;
-    /* font-family: 'Comfortaa', sans-serif; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .time-container {
-    color: rgb(207, 222, 88);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    color: rgb(204,148,198);
+   
+}
+
+.time-container h1 {
+    color: rgb(204,68,251);
+    font-size: 12em;
+    font-weight: bolder;
+    margin: 0;
+   
 }
 
 .time-container h2 {
-    font-size: 3em;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 2em;
+
 }
+
+input {
+    background-color: rgb(204,182,121);
+}
+
