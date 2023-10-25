@@ -5,7 +5,7 @@
 I'm counting down the time and at the end there will be surprise :) Another ocasion to practise JavaScript with loops, methods, new functions with understanding how to show it on reh screen.  
 
 ## ✏  First look 
-Like You can see, it's super simply when it comes to look ( i was taking into consideration one background with gradients or some fun with CSS figures),
+Like You can see, it's super simply when it comes to look ( i was taking into consideration one background with gradients or fun-made with CSS figures),
 ![first page](./img/screen_1.png)
 
 but in the end the power of JS is revealed !
