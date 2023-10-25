@@ -12,11 +12,6 @@ body {
     text-align: center;
 }
 
-.time-container {
-    color: rgb(204,148,198);
-   
-}
-
 .time-container h1 {
     color: rgb(204,68,251);
     font-size: 12em;
@@ -28,10 +23,20 @@ body {
 .time-container h2 {
     font-family: 'Comfortaa', sans-serif;
     font-size: 2em;
-
+    color: rgb(204,148,198);
 }
 
-input {
-    background-color: rgb(204,182,121);
+.time-container .custom-sider {
+    width: 16rem;
+    height: 2rem;
+    
+    background-color: rgba(247, 232, 99, 0.8);
+    margin: 0 auto;
+}
+
+.time-container .fill {
+    width: 100%;
+    height: 2rem;
+    background-color: rgba(204,68,251, 0.3);
 }
 
