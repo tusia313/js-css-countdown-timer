@@ -34,9 +34,11 @@ function suprise() {
 
     for (let i=0; i<500; i++) {
         setTimeout(() => {
-            console.log('Boo!')
             const circleElement = document.createElement('div')
             circleElement.classList.add('circle')
+            circleElement.style.backgroundColor = colors[Math.floor(Math.random()) * colors.lenght] 
+            circleElement.style.left = Math.floor(Math.random() * 100) + '%'
+            circleElement.style.top = Math.floor(Math.random() * 100) + '%'
             headingElement.append(circleElement)
         }
         , i * 5)
