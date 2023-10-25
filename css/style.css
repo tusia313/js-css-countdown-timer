@@ -14,7 +14,7 @@ body {
 
 .time-container h1 {
     color: rgb(204,68,251);
-    font-size: 12em;
+    font-size: 10em;
     font-weight: bolder;
     margin: 0;
    
@@ -30,7 +30,7 @@ body {
     width: 16rem;
     height: 2rem;
     
-    background-color: rgba(247, 232, 99, 0.8);
+    background-color: rgba(247, 232, 99, 0.6);
     margin: 0 auto;
 }
 
@@ -38,5 +38,12 @@ body {
     width: 100%;
     height: 2rem;
     background-color: rgba(204,68,251, 0.3);
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
 }
 

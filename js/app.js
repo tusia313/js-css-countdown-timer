@@ -18,6 +18,28 @@ const time = setInterval(() => {
         clearInterval(time)
         headingElement.textContent = 'Congrats !'
         headingElement.style.color = 'white'
+        suprise()
     }
 
 }, 1000)
+
+
+function suprise() {
+    const colors = [
+        'rgba(245,17,148, 0.5)',
+        'rgba(245,107,59, 0.5)',
+        'rgba(245,219,82, 0.5)',
+        'rgba(245,178,95, 0.5)',
+    ]
+
+    for (let i=0; i<500; i++) {
+        setTimeout(() => {
+            console.log('Boo!')
+            const circleElement = document.createElement('div')
+            circleElement.classList.add('circle')
+            headingElement.append(circleElement)
+        }
+        , i * 5)
+    }
+}
+
