@@ -1,4 +1,4 @@
-#   🔮 Countdown timer 🔮
+#   🎉 Countdown timer 🎉
 
 ## ✏  What's it about?
 
