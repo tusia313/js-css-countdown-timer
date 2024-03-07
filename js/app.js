@@ -3,11 +3,15 @@ const timeLeftText = document.querySelector('#time-left')
 
 let time = 5
 timeLeftText.innerText = time
-setInterval(() => {
-    if( time > 0) {
+
+const timeId = setInterval(() => {
     time--
     timeLeftText.innerText = time
-}
+    if (time <= 0) {
+        clearInterval(timeId)
+        timeLeftText.textContent = "Congrats !"
+    }
+
 }, 1000)
 
 
