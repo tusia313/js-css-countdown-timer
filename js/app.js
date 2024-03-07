@@ -1,17 +1,17 @@
-const slider = document.querySelector('#slider')
+const customElement = document.querySelector('.fill')
 const timeLeftText = document.querySelector('#time-left')
-
-let time = 5
+let startCount = 5
+let time = startCount
 timeLeftText.innerText = time
 
 const timeId = setInterval(() => {
     time--
     timeLeftText.innerText = time
+    customElement.style.width = (time/startCount) * 100 + '%'
     if (time <= 0) {
         clearInterval(timeId)
         timeLeftText.textContent = "Congrats !"
     }
-
 }, 1000)
 
 
