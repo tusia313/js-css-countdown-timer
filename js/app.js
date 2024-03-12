@@ -7,18 +7,34 @@ timeLeftText.innerText = time
 const timeId = setInterval(() => {
     time--
     timeLeftText.innerText = time
-    customElement.style.width = (time/startCount) * 100 + '%'
+    customElement.style.width = (time / startCount) * 100 + '%'
     if (time <= 0) {
+        surprise()
         clearInterval(timeId)
         timeLeftText.textContent = "Congrats !"
     }
 }, 1000)
 
+function surprise() {
+    const colors = [
+        'rgba(245,17,148, 0.5)',
+        'rgba(245,107,59, 0.5)',
+        'rgba(245,219,82, 0.5)',
+        'rgba(245, 178, 95, 0.5)',
+        'rgba(248, 23, 195, 0.5)',
+        'rgba(248, 23, 195, 0.5)',
+        'rgba(219, 207, 192, 0.7)',
+    ]
 
-
-
-
-
+    for( let i = 0; i < 500; i++) {
+       const circleElement = document.createElement('div')
+       circleElement.classList.add('circle')
+       timeLeftText.append(circleElement)
+        setTimeout(() => {
+            console.log('boo!')
+        } , i * 5)
+    }
+}
 
 // const headingElement = document.querySelector('#time-left')
 // const sliderElement = document.querySelector('.fill')
