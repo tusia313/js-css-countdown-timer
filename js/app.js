@@ -9,9 +9,9 @@ const timeId = setInterval(() => {
     timeLeftText.innerText = time
     customElement.style.width = (time / startCount) * 100 + '%'
     if (time <= 0) {
-        surprise()
         clearInterval(timeId)
         timeLeftText.textContent = "Congrats !"
+        surprise()
     }
 }, 1000)
 
@@ -27,11 +27,13 @@ function surprise() {
     ]
 
     for( let i = 0; i < 500; i++) {
+        setTimeout(() => {
        const circleElement = document.createElement('div')
        circleElement.classList.add('circle')
+       circleElement.style.left = Math.floor(Math.random() * 100) + '%'
+       circleElement.style.top = Math.floor(Math.random() * 100) + '%'
+       circleElement.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)] 
        timeLeftText.append(circleElement)
-        setTimeout(() => {
-            console.log('boo!')
         } , i * 5)
     }
 }
